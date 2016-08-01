@@ -1,3 +1,15 @@
+CREATE TABLE ejemplo_ventas (
+    empresa varchar(15),
+    mes int,
+    variedad varchar(15),
+    color varchar(15),
+    largo numeric(5,2),
+    tallos int,
+    precio numeric(5,2),
+    destino varchar(15),
+    promedios numeric(5,2)
+);
+
 insert into ejemplo_ventas (empresa,mes,variedad,color,largo,tallos,precio,destino,promedios) values (
 'Floricola 1',1,'Freedom','Rojo',0.5,10,0.25,'USA',0.26);
 insert into ejemplo_ventas (empresa,mes,variedad,color,largo,tallos,precio,destino,promedios) values (
