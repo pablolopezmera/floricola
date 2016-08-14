@@ -1,0 +1,12 @@
+<Schema name="Esquema ventas" description="Descripcion del esquema">
+  <Cube name="Prueba ventas" caption="Este es el caption" visible="true" description="Descripcoin del cubo" cache="true" enabled="true">
+    <Table name="ejemplo_ventas" schema="public">
+    </Table>
+    <Dimension type="StandardDimension" visible="true" foreignKey="codigo_empresa" name="Empresa">
+    </Dimension>
+    <Dimension type="StandardDimension" visible="true" foreignKey="codigo_mes" name="Mes">
+    </Dimension>
+    <Measure name="Precio promedio" column="precio" aggregator="avg" visible="true">
+    </Measure>
+  </Cube>
+</Schema>
